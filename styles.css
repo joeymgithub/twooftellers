@@ -1,73 +1,97 @@
 /* Reset default styles */
 * {
-    margin: 5px;
-    padding: 25px;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #1a1a1a;
-    color: #f1f1f1;
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    text-align: center;
-    max-width: 80%;
-    margin: auto;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px; /* Add padding for small screens */
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+input {
+  width: 90%; /* Adjust for smaller screens */
+  max-width: 500px;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: #fff;
+  outline: none;
+}
+
+button {
+  width: 90%; /* Take up more space on mobile */
+  max-width: 500px;
+  padding: 15px;
+  font-size: 1.5rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #29722d;
+}
+
+#error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+video {
+  width: 100%; /* Ensure the video takes up available space */
+  max-width: 600px;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
   input {
-    max-width: 500px;
-    padding: 10px;
-    font-size: 2rem;
-    border: 2px solid #f1f1f1;
-    border-radius: 5px;
-    background-color: #2b2b2b;
-    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px;
   }
-  
+
   button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 2rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    padding: 12px;
   }
-  
-  button:hover {
-    background-color: #29722d;
-  }
-  
-  #error-message {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 5px;
-  }
-  
+
   video {
-    width: 50%;
-    border: 2px solid #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    margin-top: 70px;
+    width: 80%;
   }
-  
+}
