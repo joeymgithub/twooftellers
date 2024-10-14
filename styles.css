@@ -36,7 +36,7 @@ form {
 }
 
 input {
-  width: 90%; /* Adjust for smaller screens */
+  width: 70%; /* Adjust for smaller screens */
   max-width: 500px;
   padding: 15px;
   font-size: 1.5rem;
@@ -45,10 +45,11 @@ input {
   background-color: #2b2b2b;
   color: #fff;
   outline: none;
+  text-align: center;
 }
 
 button {
-  width: 90%; /* Take up more space on mobile */
+  width: 40%; /* Take up more space on mobile */
   max-width: 500px;
   padding: 15px;
   font-size: 1.5rem;
@@ -86,7 +87,7 @@ video {
   }
 
   button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 12px;
   }
 
