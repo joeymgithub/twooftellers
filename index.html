@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twooftellers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Button to reveal the video -->
+    <button id="reveal-button">Listen 🎵</button>
+
+    <!-- Video section (hidden initially) -->
+    <div id="video-container" class="hidden">
+      <video id="video" controls loop>
+        <source src="alex.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

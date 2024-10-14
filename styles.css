@@ -1,0 +1,52 @@
+/* Reset some browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Styling the reveal button */
+  #reveal-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #reveal-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Video styling */
+  video {
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  }
+  
