@@ -8,8 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <!-- Button to reveal the video -->
-    <button id="reveal-button">Listen 🎵</button>
+    <!-- Password form to access the video -->
+    <form id="password-form">
+      <input 
+        type="password" 
+        id="password-input" 
+        placeholder="Alex... enter password"
+        required>
+      <button type="submit">Listen 🎵</button>
+      <p id="error-message" class="hidden">Incorrect password. Try again.</p>
+    </form>
 
     <!-- Video section (hidden initially) -->
     <div id="video-container" class="hidden">
